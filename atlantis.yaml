@@ -1,10 +1,8 @@
-#! https://www.runatlantis.io/docs/repo-level-atlantis-yaml.html#use-cases
 version: 3
 automerge: true
-delete_source_branch_on_merge: true
 projects:
 - dir: .
   apply_requirements: ["approved", "mergeable", "undiverged"]
   autoplan:
     enabled: true
-    when_modified: ["../**/*.tf]
+    when_modified: ["../**/*.tf", "**/k8s/**/*.yaml","caf-es-lib/*.json"]
