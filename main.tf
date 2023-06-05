@@ -1,3 +1,3 @@
-resource "null_resource" "example_v3" {}
+resource "null_resource" "example_v4" {}
 
 ###
