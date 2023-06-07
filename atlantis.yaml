@@ -1,0 +1,8 @@
+version: 3
+automerge: true
+projects:
+- dir: .
+  apply_requirements: ["approved", "mergeable", "undiverged"]
+  autoplan:
+    enabled: true
+    when_modified: ["../**/*.tf", "**/k8s/**/*.yaml","caf-es-lib/*.json"]
