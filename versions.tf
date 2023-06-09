@@ -23,7 +23,7 @@ terraform {
 }
 
 provider "azurerm" {
-  tenant_id       = var.tenant_id                          # nosportugal.onmicrosoft.com
+  tenant_id       = "930a470b-f629-4f93-a65b-bad14153f14f"                         # nosportugal.onmicrosoft.com
   subscription_id = "a5a70928-a6c8-4495-b752-a7ab1d7768b7" # ccoe-lab
   features {}
 }
