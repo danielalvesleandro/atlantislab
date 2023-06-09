@@ -1,16 +1,29 @@
 terraform {
-  required_version = ">= 1.3.7"
+  required_version = ">= 1.0.0"
 
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.57"
+      version = "~>3.30.0"
     }
     azuread = {
       source  = "hashicorp/azuread"
-      version = "~> 2.39"
+      version = "~> 2.29.0"
     }
   }
+  #terraform {
+  #required_version = ">= 1.3.7"
+
+  #required_providers {
+  #  azurerm = {
+  #    source  = "hashicorp/azurerm"
+  #    version = "~>3.57"
+  #  }
+  #  azuread = {
+  #   source  = "hashicorp/azuread"
+  #   version = "~> 2.39"
+  # }
+  #}
   backend "azurerm" {
     resource_group_name  = "rg-lab-tfstate"
     storage_account_name = "nostfstatestg"
