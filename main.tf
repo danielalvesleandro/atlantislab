@@ -1,3 +1,4 @@
-resource "null_resource" "example_v2" {}
-
-###
+resource "azurerm_resource_group" "atlantis_temp_test_v1" {
+  name     = "atlantis_temp_test_v1"
+  location = "westeurope"
+}
